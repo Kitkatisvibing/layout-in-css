@@ -7,6 +7,38 @@
     <link rel="stylesheet" href="../style.css">
     <style>
       /* Doe hier jouw ding! */
+      body{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+      }
+
+      header{
+        grid-area: 1 / 1 / 2 / 2;
+      }
+
+      nav{
+        grid-area: 1 / 2 / 2 / 4;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+          a{
+            background-color: white;
+            padding: 5px;
+            border-radius: 5px;
+          }
+      }
+
+      main{
+        grid-area: 2 / 1 / 5 / 4;
+      }
+
+      footer{
+        grid-area: 5 / 1 / 6 / 4;
+      }
     </style>
   </head>
   <body id="basic-layout-9">
